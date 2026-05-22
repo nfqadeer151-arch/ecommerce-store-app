@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useCartStore, Product } from "../store/cartStore";
+import { useCartStore, Product } from "../../store/cartStore";
 
 const BACKEND_URL = "http://localhost:5000/api";
 
