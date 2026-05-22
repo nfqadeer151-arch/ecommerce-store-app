@@ -1,13 +1,14 @@
 {
-  "name": "antigravity",
+  "name": "smartcart-monorepo",
   "private": true,
   "workspaces": [
     "frontend",
-    "backend"
+    "backend",
+    "services/recommendations"
   ],
   "scripts": {
     "install-all": "npm install --workspaces",
-    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\""
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\" \"npm run dev --workspace=recommendation-service\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
